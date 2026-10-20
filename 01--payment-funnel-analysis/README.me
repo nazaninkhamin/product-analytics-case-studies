@@ -1,1 +1,5 @@
-
+ Findings and Root Cause Analysis(RCA)
+Observation:We identified a significant drop in the payment conversion rate
+Root cause: after segmentation the data by device_os  and subscription_type, we found that the issue highly localized to Andriod users, specificaaly those on the Premium Plan, where the conversion rate plummeted to 15%.
+Conclusion:this indicates a technical bug in andriod payment gateway for premium subscriptions, rathe than a pricing or user intent issue.
+Recommandation: the engineering team should priorotize fixing the Android premium payment flow before and further marketing spend.
